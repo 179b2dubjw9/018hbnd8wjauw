@@ -1,32 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
 body {
-    margin: 0;
-    height: 100vh;
+    background-color: #FFFFFF;
+    color: #2F3192;
+    font-family: Arial, sans-serif;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FFFFFF; /* Tło strony */
-    color: #2F3192; /* Kolor tekstu */
-    font-family: 'Roboto', sans-serif; /* Nowa czcionka */
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
 }
 
-.container {
-    text-align: center;
+.center-container {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.center-container:hover {
+    transform: scale(1.1);
 }
 
 .logo {
-    width: 150px; /* Ustal rozmiar logo */
-    transition: transform 0.3s ease; /* Dodaj animację */
-}
-
-.logo:hover {
-    transform: scale(1.1); /* Powiększenie logo przy najechaniu */
+    width: 150px; /* Zmniejszono szerokość logo */
+    height: 150px; /* Zmniejszono wysokość logo */
+    transition: transform 0.3s ease-in-out;
 }
 
 .message {
-    margin-top: 20px; /* Odstęp między logo a tekstem */
-    font-size: 24px; /* Ustal rozmiar czcionki */
-    color: #00AEEE; /* Kolor napisu */
-    font-weight: 700; /* Pogrubiona wersja czcionki */
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Animacja kropek */
+.dots {
+    display: inline-block;
 }
