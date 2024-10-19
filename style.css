@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF; /* Tło strony */
+    color: #2F3192; /* Kolor tekstu */
+    font-family: 'Roboto', sans-serif; /* Nowa czcionka */
+}
+
+.container {
+    text-align: center;
+}
+
+.logo {
+    width: 150px; /* Ustal rozmiar logo */
+    transition: transform 0.3s ease; /* Dodaj animację */
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Powiększenie logo przy najechaniu */
+}
+
+.message {
+    margin-top: 20px; /* Odstęp między logo a tekstem */
+    font-size: 24px; /* Ustal rozmiar czcionki */
+    color: #00AEEE; /* Kolor napisu */
+    font-weight: 700; /* Pogrubiona wersja czcionki */
+}
